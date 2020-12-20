@@ -1,0 +1,24 @@
+.HomePage {
+  display: flex;
+  min-height: 100vh;
+}
+
+.LeftSide {
+  background-color: #2a2f32;
+  flex: 35%;
+  display: block;
+}
+.RightSide {
+  background-color: #262d31;
+  border-left: 1px solid;
+  flex: 65%;
+}
+
+@media screen and (min-width: 1300px) {
+  .LeftSide {
+    flex: 30%;
+  }
+  .RightSide {
+    flex: 70%;
+  }
+}

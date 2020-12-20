@@ -1,0 +1,42 @@
+.Header {
+  background-color: #2a2f32;
+  height: 59px;
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.HeaderLeft {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+.Title {
+  padding-left: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(241, 241, 242, 0.92);
+  font-weight: bold;
+}
+.HeaderRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 13vw;
+}
+.icon {
+  cursor: pointer;
+  padding: 8px;
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+}
+
+.icon:active {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.icon:first-of-type {
+  margin-left: 0px;
+}

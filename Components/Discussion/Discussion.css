@@ -1,0 +1,52 @@
+.Discussion {
+  background-color: #131c21;
+  display: flex;
+  align-items: center;
+  height: 72px;
+  border-bottom: 1px solid;
+  width: 100%;
+}
+.Discussion:hover {
+  background-color: #2a2f32;
+}
+.LeftDiscussion {
+  height: 100%;
+  padding: 0 15px 0 13px;
+  display: flex;
+  flex: none;
+  align-items: center;
+}
+.RightDiscussion {
+  display: flex;
+  color: #f1f1f2eb;
+  padding-right: 10px;
+  flex-direction: column;
+  width: 100%;
+}
+.RightDiscussionTop {
+  display: flex;
+}
+.RightDiscussionTopLeft {
+  display: flex;
+  flex-grow: 1;
+  font-size: 16px;
+  white-space: nowrap;
+}
+.RightDiscussionTopRight {
+  font-size: 10px;
+  color: rgb(241 241 242 / 63%);
+  margin-top: 3px;
+  white-space: nowrap;
+}
+.RightDiscussionBas {
+  padding-top: 10px;
+  display: flex;
+  color: rgb(241 241 242 / 63%);
+  font-size: 14px;
+  height: 24px;
+  white-space: nowrap;
+}
+.RightDiscussionBasLeft {
+  display: flex;
+  flex-grow: 1;
+}

@@ -1,0 +1,41 @@
+.MessageYou {
+  background-color: #2a2f32;
+  height: fit-content;
+  font-size: 16px;
+  border-radius: 7.5px;
+  padding: 6px 7px 8px 9px;
+  color: rgba(241, 241, 242, 0.92);
+  position: relative;
+  margin-left: 9%;
+  margin-bottom: 12px;
+  align-self: flex-start;
+}
+
+.MessageMe {
+  background-color: #056162;
+  height: fit-content;
+  font-size: 16px;
+  border-radius: 7.5px;
+  padding: 6px 7px 8px 9px;
+  color: rgba(241, 241, 242, 0.92);
+  position: relative;
+  margin-right: 9%;
+  margin-bottom: 12px;
+  align-self: flex-end;
+}
+.User {
+  text-align: left;
+  color: green;
+  font-weight: 500;
+  font-size: 12.8px;
+  line-height: 22px;
+}
+.Date {
+  font-size: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  position: relative;
+  color: rgba(241, 241, 242, 0.63);
+  float: right;
+  margin: 10px 0 -5px 8px;
+}

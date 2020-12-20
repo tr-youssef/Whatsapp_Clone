@@ -1,0 +1,9 @@
+.ChatBody {
+  background-image: url("https://web.whatsapp.com/img/bg-chat-tile-light_04fcacde539c58cca6745483d4858c52.png");
+  height: calc(100vh - 71px);
+  background-repeat: repeat;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+}

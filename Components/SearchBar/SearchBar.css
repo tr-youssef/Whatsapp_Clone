@@ -1,0 +1,34 @@
+.SearchBar {
+  display: flex;
+  align-items: center;
+  background-color: #131c21;
+  height: 49px;
+  border-bottom: 1px solid;
+}
+.Input {
+  display: flex;
+  align-items: center;
+  background-color: #323739;
+  width: 100%;
+  height: 35px;
+  border-radius: 18px;
+  margin-left: 12px;
+  margin-right: 14px;
+}
+.Input > .MuiSvgIcon-root {
+  padding: 10px !important;
+}
+.Input > input {
+  border: none;
+  cursor: text;
+  background-color: #323739;
+  color: #b1b3b5;
+  padding-left: 10px;
+  width: 80%;
+  font-size: 15px;
+}
+.Input > input:focus {
+  outline: none;
+  color: #b1b3b5;
+  font-size: 15px;
+}
