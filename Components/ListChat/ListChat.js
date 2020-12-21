@@ -25,12 +25,14 @@ export default function ListChat(props) {
         objectFit: "cover"
       }}
     >
-      {props.DataDiscussion.discussions.map((item) => (
+      {props.DataDiscussion.sort(function (b, a) {
+        return new Date(a.timeStamp) - new Date(b.timeStamp);
+      }).map((item, i) => (
         <ListItem alignItems="flex-start" className="ListItem" key={item._id}>
           <Discussion
             title={item.name}
             lastMessage={item.lastMessage}
-            avatar={item.avatar}
+            avatar={"https://i.pravatar.cc/150?img=" + i}
             date={
               Math.abs(new Date(item.timeStamp) - Date.now()) >= 604800000
                 ? new Intl.DateTimeFormat("fr-FR").format(

@@ -4,12 +4,12 @@ import "./HomePage.css";
 import Header from "../../Components/Header/Header";
 import SearchBar from "../../Components/SearchBar/SearchBar";
 import ListChat from "../../Components/ListChat/ListChat";
-import { DataDiscussion } from "../../Data/Discussion";
 import HeaderChat from "../../Components/HeaderChat/HeaderChat";
 import Chat from "../../Components/Chat/Chat";
 
 export default function HomePage() {
   const [data, setData] = useState({ discussions: [] });
+  const [filter, setFilter] = useState("");
 
   const fetchData = useCallback(() => {
     axios({
@@ -31,6 +31,10 @@ export default function HomePage() {
     fetchData();
   }, [fetchData]);
 
+  const changeFilter = (e) => {
+    setFilter(e);
+  };
+
   return (
     <div className="HomePage">
       <div className="LeftSide">
@@ -40,8 +44,14 @@ export default function HomePage() {
           }
           notif={true}
         />
-        <SearchBar />
-        <ListChat DataDiscussion={data} />
+        <SearchBar changeFilter={changeFilter} />
+        {Array.isArray(data.discussions) && data.discussions.length !== 0 && (
+          <ListChat
+            DataDiscussion={data.discussions.filter((d) =>
+              d.name.toLowerCase().includes(filter.toLowerCase())
+            )}
+          />
+        )}
       </div>
       <div className="RightSide">
         <HeaderChat

@@ -3,7 +3,7 @@ import "./SearchBar.css";
 import SearchOutlined from "@material-ui/icons/SearchOutlined";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 
-export default function SearchBar() {
+export default function SearchBar(props) {
   const [searchActif, setSearchActif] = useState(false);
   const [searchText, setSearchText] = useState(
     "Rechercher ou démarrer une nouvelle discussion"
@@ -27,7 +27,10 @@ export default function SearchBar() {
             setSearchActif(false);
             setSearchText("Rechercher ou démarrer une nouvelle discussion");
           }}
-          onChange={(e) => setSearchText(e)}
+          onChange={(e) => {
+            setSearchText(e.target.value);
+            props.changeFilter(e.target.value);
+          }}
         />
       </div>
     </div>

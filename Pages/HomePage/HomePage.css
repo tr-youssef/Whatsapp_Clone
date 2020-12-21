@@ -6,19 +6,25 @@
 .LeftSide {
   background-color: #2a2f32;
   flex: 35%;
+  max-width: 35%;
   display: block;
 }
 .RightSide {
   background-color: #262d31;
   border-left: 1px solid;
+  max-width: 65%;
   flex: 65%;
 }
 
 @media screen and (min-width: 1300px) {
   .LeftSide {
     flex: 30%;
+
+    max-width: 30%;
   }
   .RightSide {
     flex: 70%;
+
+    max-width: 70%;
   }
 }
